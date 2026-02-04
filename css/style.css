@@ -37,7 +37,7 @@ nav a:hover {
 }
 
 .container {
-    width: 80%;
+    max-width: 1400px;
     margin: 50px auto;
 }
 
@@ -105,6 +105,23 @@ h2 {
     margin-bottom: 15px;
 }
 
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.card p{
+    text-align: left;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+h2{
+    text-align: center;
+}
 footer {
     background: #111;
     color: #fff;
@@ -113,6 +130,26 @@ footer {
     margin-top: 60px;
 }
 
+table{
+    width: 50%;
+    border-collapse: collapse; 
+    
+}
+table th{
+    font-size: 20px;
+}
+table td{
+    border-left: 1px solid black;
+    padding: 10px;
+    text-align-last: left;
+}
+.section-our-works{
+    text-align: center;
+}
+.section-price{
+    text-align: center;
+   
+}
 .works img {
     width: 200px;
     height: 300px;
@@ -128,11 +165,16 @@ footer {
 
 .section-popular__row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
 }
-
+.btn{
+    background-color: #333;
+    color: white;
+    border: none;
+    margin: 0 auto;
+}
 @keyframes btnColorChange {
     0% {
         background-color: white;
